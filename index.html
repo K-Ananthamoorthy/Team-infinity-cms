@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CMS | smvitm</title>
+    <link rel="icon" href="/smvitmlogo01.png">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #000;
+            overflow: hidden;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            text-align: center;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        h1, p, a, img {
+            opacity: 0;
+            transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+        }
+
+        h1 {
+            font-size: 80px;
+            color: #dad1d1;
+        }
+
+        p {
+            font-size: 25px;
+            color: #666;
+            padding-bottom: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #00f;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="container">
+        <img src="/smvitmlogo01.png" height="150" id="logo">
+        <h1 id="welcome">Welcome</h1>
+        <p id="message"><a href="/page/login.html" id="loginLink">Login here</a></p>
+        <!-- <a href="/page/login.html" id="loginLink">Login here</a> -->
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            // Fade in the logo
+            document.getElementById('logo').style.opacity = 1;
+
+            // After a delay, move the logo slightly up with an animation
+            setTimeout(function() {
+                document.getElementById('logo').style.transform = 'translateY(05vh)';
+            }, 1000);
+
+            // After another delay, fade in the container
+            setTimeout(function() {
+                document.getElementById('container').style.opacity = 1;
+            }, 1000);
+
+            // After another delay, fade in the welcome message and other elements
+            setTimeout(function() {
+                document.getElementById('welcome').style.opacity = 1;
+                document.getElementById('message').style.opacity = 1;
+                document.getElementById('loginLink').style.opacity = 1;
+            }, 1500);
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+    transition: background-color 0.5s, color 0.5s;
+    margin: 0;
+    font-family: "Lato", sans-serif;
+}
+
+body.light-mode {
+    background-color: #f8f9fa;
+    color: #000;
+}
+
+body.dark-mode {
+    background-color: #343a40;
+    color: #fff;
+}
+
+.header {
+    background-color: #23282d;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+
+
+
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #1e2227;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 0.1);
+    gap: 5px;
+}
+
+.sidebar a {
+    padding: 15px 25px;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #343b42;
+    color: #ffffff;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.openbtn {
+    font-size: 1.5em;
+    cursor: pointer;
+    background-color: #2b3035;
+    color: #fff;
+    padding: 15px 20px;
+    border: none;
+    transition: background-color 0.5s;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 5px;
+}
+
+.openbtn:hover {
+    background-color: #272b2e;
+}
+
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    margin-left: 0;
+}
+
+@media (max-width: 768px) {
+    .navbar-toggler-icon {
+        font-size: 1.5em;
+    }
+
+    .navbar a {
+        font-size: 1em;
+    }
+
+    .sidebar a {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .sidebar .closebtn {
+        font-size: 1.8em;
+    }
+
+    .openbtn {
+        font-size: 1.5em;
+        padding: 15px;
+    }
+}
+
+#darkModeToggle {
+    cursor: pointer;
+    font-size: 1em;
+    color: #007bff; /* Color for light mode */
+    transition: color 0.5s, background-color 0.6s;
+    position: fixed;
+    right: 20px;
+    bottom: 10px;
+    z-index: 999;
+    padding: 20px;
+    border-radius: 22%;
+}
+
+#darkModeToggle:hover {
+    color: #0056b3; /* Darker color on hover for light mode */
+    background-color: #d3cfcf; /* Background color on hover */
+}
+
+.dark-mode #darkModeToggle {
+    color: #000000; /* Color for dark mode */
+    background-color: #f9fcff; /* Background color for dark mode */
+}
+
+#darkModeToggle i {
+    display: block;
+}
+
+#darkModeToggle i:first-child {
+    transform: translateY(0.1em);
+}
+
+#darkModeToggle i:last-child {
+    transform: translateY(0.1em);
+}

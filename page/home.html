@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Management System</title>
+    <link rel="icon" href="/smvitmlogo01.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="/style/style.css">
+    <script src="/script/script.js"></script>
+    <style>
+        #main {
+            transition: margin-left .5s;
+            padding: 20px;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .center-box {
+            display: inline-block;
+            padding: 20px;
+            border: 2px solid transparent;
+            transition: border 0.3s;
+        }
+
+        .center-box:hover {
+            border: 2px solid #007bff;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <div class="header">College Management System</div>
+    <div id="mySidebar" class="sidebar">
+        <span class="closebtn" onclick="closeNav()">&times;</span>
+        
+        <a href="#">Home</a>
+    #
+        <a href="#">Student Management</a>
+        
+        <a href="#">Asset Management</a>
+        
+        <a href="#">Hostel Management</a>
+        <a href="#">Staff Management</a>
+        <a href="#">office Management</a>
+        <a href="#" onclick="signOut()">Sign Out</a>
+    </div>
+    <button class="openbtn" onclick="openNav()">&#9776;</button>
+    <div id="main">
+        <h2>Welcome to the College Management System</h2>
+        <p>Please select an option from the sidebar to manage students or assets.</p>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/smvitmlogo01.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Student Management</h5>
+                            <p class="card-text">Here all the student Management Handled</p>
+                            <a href="#" class="btn btn-primary">Go here</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/smvitmlogo01.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Asset Management</h5>
+                            <p class="card-text">Here all the Asset Management Handled</p>
+                            <a href="#" class="btn btn-primary">Go here</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/smvitmlogo01.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Hostel Management</h5>
+                            <p class="card-text">Here all the Hostel Management Handled</p>
+                            <a href="#" class="btn btn-primary">Go here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/smvitmlogo01.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Staff Management</h5>
+                            <p class="card-text">Here all the Staff Management Handled</p>
+                            <a href="#" class="btn btn-primary">Go here</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-4 mb-3">
+                    <div class="card" style="width: 18rem;">
+                        <img class="card-img-top" src="/smvitmlogo01.png" alt="Card image cap">
+                        <div class="card-body">
+                            <h5 class="card-title">Office Management</h5>
+                            <p class="card-text">Here all the Office Management Handled</p>
+                            <a href="#" class="btn btn-primary">Go here</a>
+                        </div>
+                    </div>
+                </div>
+    </div>
+    
+    <div id="darkModeToggle" onclick="toggleMode()">
+        <i class="fas fa-sun"></i>
+        <i class="fas fa-moon" style="display: none;"></i>
+    </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script>
+        // Replace the current page in the browser's history
+        // window.location.replace(window.location.href);
+
+        // Handle modal confirmation
+        function confirmNavigation() {
+            // No need for this function since we are replacing the page
+        }
+    </script>
+</body>
+</html>
